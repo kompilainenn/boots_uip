@@ -5,7 +5,7 @@
 	<title>Учётная система УИП</title>
 <!--	Это bootstrap-->
 	<link href="bootstrap.min.css" rel="stylesheet">
-	<script src="bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=6lx7FKpS-ZDq17KgohAS_ubS11cJt5GCbvqDT0GfjttvQso0h467uJ08YAzc3B_o5WdxQyNN-ZlblDJEbSAmqH2m0WfR7ybb8sGcWqXZW5RR2XC94SWwrWHvYtUV_s96vHJI8EqHfR3Zw-Dm5szc_kILJCMPX5l_S6NdDF7EC7VQovOWlt3l1cSeTenrfTUI2CKtEjYB2yPpzgmEdjc-AU4peDzbBuoW-2PGqmDWZuP70eqKR2NXbKc-Rx92yKe1_oPSSu5jHxA-cnz65vBbdDtTIiUnMbvx9gh3aTY8rljA0gMIW_AxMrjMrRbcYeQ1ajaqscJ7TEQ_zaZa5iPM2XeTbsL1m4VgNHCRUSn571M8Xlaw2qL6pOE-l3PUa8JShe0xeR_S0n8GFaj_mwjKAGUTgedW13RYmCkrRdN2UJQPyUOVsMnqyl-DIKhmVYcnrWHie3KKM98lQMcUE7ignGlAFw7H8YhyqiUV1mYxlmXV4oA453C6VzEHyoCEJMFBweeRzxCPSbJUTDX6AVHWKEiJDvIIjQZZMBLkbC73Bd7tbSJKjktGbLoae2wkBsUwPbFz5_hWn8VMB1hCQxj8bkYHEkSt4izmDw6QTjSj1W6YBa_wJJSCMgm4AW3ngx00vUhPGit7KN149ShKnvL6zAwowYPNus6iXVrXQets_dAuzw701_zSx08vhvam8wn1Bh9I98xrKYQhVYR0AKkAUiqqCIuVhCRhbKH6RY7-8kB4Gg59IYGLW_SZStw2HC8IeKBwybI_v_MLecySJARWsKacLTQbot-RFp0pctWB3ro1Ieva4JzhvH7EWKetwbolON2VCf97v3d58cfkmtGWhJPX42aChK1FpZa1dnbv4lk" charset="UTF-8"></script><script src="bootstrap.bundle.min.js"></script>
 
 	<!--	Это иконки fontawesome-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -33,35 +33,90 @@
 		</div>
 	</div>
 	<div class="row">
+		
+				
 		<div class="col-2 text-center">
-			<div class="block mb-2">
-				<a href="general.html">Справочники</a>
-			</div>
-
-			<div class="block mb-2">
-				<a href="budgets.html">Бюджеты</a>
-			</div>
-
-			<div class="block mb-2">
-				<a href="contracts.html">Договоры</a>
-			</div>
-
-			<div class="block mb-2">
-				<a href="payments.html">Оплаты</a>
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="general" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Справочники
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="general">
+					<li><a class="dropdown-item" href="#">Контрагенты внешние</a></li>
+					<li><a class="dropdown-item" href="#">Контрагенты внутренние</a></li>
+					
+				</ul>
 			</div>
 			
-			<div class="block mb-2">
-				<a href="execution.html">Выполнение</a>
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="budgets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Бюджеты
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="budgets">
+					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
+					<li><a class="dropdown-item" href="#">Добавить</a></li>
+					<li><a class="dropdown-item" href="#">Изменить</a></li>
+					
+				</ul>
 			</div>
 			
-			<div class="block mb-2">
-				<a href="reports.html">Отчёты</a>
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="contracts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Договоры
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="contracts">
+					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
+					<li><a class="dropdown-item" href="#">Добавить</a></li>
+					<li><a class="dropdown-item" href="#">Изменить</a></li>
+					
+				</ul>
 			</div>
+			
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="payments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Оплаты
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="payments">
+					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
+					<li><a class="dropdown-item" href="#">Добавить</a></li>
+					<li><a class="dropdown-item" href="#">Изменить</a></li>
+					<li><a class="dropdown-item" href="#">Реестр для банка</a></li>
+					
+				</ul>
+			</div>
+			
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="execution" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Выполнение
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="execution">
+					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
+					<li><a class="dropdown-item" href="#">Добавить</a></li>
+					<li><a class="dropdown-item" href="#">Изменить</a></li>
+					
+				</ul>
+			</div>
+			
+			<div class="block mb-2 dropdown dropend">
+				<div class=" dropdown-toggle" id="reports" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Отчёты
+				</div>
+				<ul class="dropdown-menu" aria-labelledby="reports">
+					<li><a class="dropdown-item" href="#">По бюджетам</a></li>
+					<li><a class="dropdown-item" href="#">По договорам</a></li>
+					<li><a class="dropdown-item" href="#">По оплатам</a></li>
+					<li><a class="dropdown-item" href="#">По выполнению</a></li>
+					
+				</ul>
+			</div>
+			
+			
 		</div>
+		
 		
 	</div>
 
 
 </div>
+
 </body>
 </html>
