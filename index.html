@@ -34,15 +34,17 @@
 	</div>
 	<div class="row">
 		
-				
+<!--	Это главное меню справа   -->				
 		<div class="col-2 text-center">
 			<div class="block mb-2 dropdown dropend">
 				<div class=" dropdown-toggle" id="general" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				Справочники
 				</div>
 				<ul class="dropdown-menu" aria-labelledby="general">
-					<li><a class="dropdown-item" href="#">Контрагенты внешние</a></li>
-					<li><a class="dropdown-item" href="#">Контрагенты внутренние</a></li>
+					<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#PartnersModal"
+						data-bs-whatever="@getbootstrap">Контрагенты</a></li>
+					<li><a class="dropdown-item" href="#">Руководители</a></li>
+					<li><a class="dropdown-item" href="#">Валюты</a></li>
 					
 				</ul>
 			</div>
@@ -112,6 +114,45 @@
 			
 		</div>
 		
+		<!--	Это модальное окно Контрагенты	-->
+	<div class="modal fade" id="PartnersModal" tabindex="-1" aria-labelledby="PartnersModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ParntersModalLabel">Добавить контрагента</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<form action="#" method="post">
+
+				<div class="modal-body">
+						<div class="mb-3">
+							<label for="name" class="col-form-label">Название:</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="mb-3">
+							<label for="count" class="col-form-label">ИНН:</label>
+							<input type="number" class="form-control" id="count">
+						</div>
+						<div class="mb-3">
+							<label for="text" class="col-form-label">Описание:</label>
+							<textarea class="form-control" id="description"></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="text" class="col-form-label">Контакты:</label>
+							<textarea class="form-control" id="contacts"></textarea>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">
+						<i class="fas fa-save" ></i>
+						Сохранить</button>
+				</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
 		
 	</div>
 
