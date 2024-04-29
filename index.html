@@ -34,15 +34,15 @@
 	</div>
 	<div class="row">
 		
-<!--	Это главное меню справа   -->				
+<!--	Это главное меню слева   -->				
 		<div class="col-2 text-center">
 			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="general" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<div class="dropdown-toggle" id="general" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				Справочники
 				</div>
 				<ul class="dropdown-menu" aria-labelledby="general">
 					<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#PartnersModal"
-						data-bs-whatever="@getbootstrap">Контрагенты</a></li>
+						data-bs-whatever="@getbootstrap" href="#">Контрагенты</a></li>
 					<li><a class="dropdown-item" href="#">Руководители</a></li>
 					<li><a class="dropdown-item" href="#">Валюты</a></li>
 					
@@ -66,6 +66,7 @@
 				Договоры
 				</div>
 				<ul class="dropdown-menu" aria-labelledby="contracts">
+					<li><a class="dropdown-item" href="#">Задачи</a></li>
 					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
 					<li><a class="dropdown-item" href="#">Добавить</a></li>
 					<li><a class="dropdown-item" href="#">Изменить</a></li>
@@ -113,9 +114,108 @@
 			
 			
 		</div>
-		
+	</div>
+
 		<!--	Это модальное окно Контрагенты	-->
-	<div class="modal fade" id="PartnersModal" tabindex="-1" aria-labelledby="PartnersModalLabel" aria-hidden="true">
+		<div class="modal fade" id="PartnersModal" tabindex="-1" aria-labelledby="PartnersModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="ParntersModalLabel">Контрагенты</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					</div>
+					<form action="#" method="post">
+	
+					<div class="modal-body col-8">
+						<div class="col-8">
+							
+							<table class="table table-striped">
+								<thead class="table-secondary">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+									<th scope="col"></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td class="text-end">
+										<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#deleteModal"
+														data-bs-whatever="@getbootstrap">
+											<i class="fas fa-trash" style="color: red"></i>
+										</button>						<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#exampleModal"
+														data-bs-whatever="@getbootstrap">
+												<i class="fas fa-edit" style="color: blue"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+									<td class="text-end">
+										<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#deleteModal"
+														data-bs-whatever="@getbootstrap">
+											<i class="fas fa-trash" style="color: red"></i>
+										</button>						<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#exampleModal"
+														data-bs-whatever="@getbootstrap">
+											<i class="fas fa-edit" style="color: blue"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+									<td class="text-end">
+										<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#deleteModal"
+														data-bs-whatever="@getbootstrap">
+											<i class="fas fa-trash" style="color: red"></i>
+										</button>
+										<button type="button" class="btn btn-sm"
+														data-bs-toggle="modal"
+														data-bs-target="#exampleModal"
+														data-bs-whatever="@getbootstrap">
+											<i class="fas fa-edit" style="color: blue"></i>
+										</button>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+				
+				
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-save" ></i>Добавить</button>
+					</div>
+				</form>
+	
+				</div>
+			</div>
+		</div>
+
+		<!--	Это модальное окно Добавить контрагента	-->
+	<div class="modal fade" id="PartnersAddModal" tabindex="-1" aria-labelledby="PartnersModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -125,36 +225,35 @@
 				<form action="#" method="post">
 
 				<div class="modal-body">
-						<div class="mb-3">
+						<div class="mb-2">
 							<label for="name" class="col-form-label">Название:</label>
 							<input type="text" class="form-control" id="name">
 						</div>
-						<div class="mb-3">
-							<label for="count" class="col-form-label">ИНН:</label>
-							<input type="number" class="form-control" id="count">
+						<div class="mb-2">
+							<label for="inn" class="col-form-label">ИНН:</label>
+							<input type="text" class="form-control" id="inn">
 						</div>
-						<div class="mb-3">
-							<label for="text" class="col-form-label">Описание:</label>
+						<div class="mb-2">
+							<label for="description" class="col-form-label">Описание:</label>
 							<textarea class="form-control" id="description"></textarea>
 						</div>
-						<div class="mb-3">
-							<label for="text" class="col-form-label">Контакты:</label>
+						<div class="mb-2">
+							<label for="contacts" class="col-form-label">Контакты:</label>
 							<textarea class="form-control" id="contacts"></textarea>
 						</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
 					<button type="submit" class="btn btn-primary">
-						<i class="fas fa-save" ></i>
-						Сохранить</button>
+						<i class="fas fa-save" ></i>Добавить</button>
 				</div>
-				</form>
+			</form>
 
 			</div>
 		</div>
 	</div>
 		
-	</div>
+	
 
 
 </div>
