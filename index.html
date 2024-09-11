@@ -33,87 +33,100 @@
 		</div>
 	</div>
 	<div class="row">
-		
-<!--	Это главное меню слева   -->				
-		<div class="col-2 text-center">
-			<div class="block mb-2 dropdown dropend">
-				<div class="dropdown-toggle" id="general" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Справочники
+		<div class="col-2">
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					  Справочники
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p><button type="button" class="btn btn-outline-primary">Контрагенты</button></p>
+						<p></p><button type="button" class="btn btn-outline-primary">Руководители</button></p>
+						<p></p><button type="button" class="btn btn-outline-primary">Валюты</button></p>
+					</div>
+				  </div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="general">
-					<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#PartnersModal"
-						data-bs-whatever="@getbootstrap" href="#">Контрагенты</a></li>
-					<li><a class="dropdown-item" href="#">Руководители</a></li>
-					<li><a class="dropdown-item" href="#">Валюты</a></li>
-					
-				</ul>
-			</div>
-			
-			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="budgets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Бюджеты
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  Проекты
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p><button type="button" class="btn btn-outline-primary">Посмотреть проекты</button></p>
+						<p><button type="button" class="btn btn-outline-primary">Добавить проект</button></p>
+						<p><button type="button" class="btn btn-outline-primary">Изменить проект</button></p>
+					</div>
+				  </div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="budgets">
-					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
-					<li><a class="dropdown-item" href="#">Добавить</a></li>
-					<li><a class="dropdown-item" href="#">Изменить</a></li>
-					
-				</ul>
-			</div>
-			
-			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="contracts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Договоры
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  Договоры
+					</button>
+				  </h2>
+				  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p><button type="button" class="btn btn-outline-primary">Задачи</button></p>
+						<p><button type="button" class="btn btn-outline-primary">Добавить договор</button></p>
+						<p><button type="button" class="btn btn-outline-primary">Изменить договор</button></p>
+						<p><button type="button" class="btn btn-outline-primary">Найти договор</button></p>
+					</div>
+				  </div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="contracts">
-					<li><a class="dropdown-item" href="#">Задачи</a></li>
-					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
-					<li><a class="dropdown-item" href="#">Добавить</a></li>
-					<li><a class="dropdown-item" href="#">Изменить</a></li>
-					
-				</ul>
-			</div>
-			
-			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="payments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Оплаты
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingFour">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						Оплаты
+					  </button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+					  	<div class="accordion-body">
+						  <p><button type="button" class="btn btn-outline-primary">Добавить оплату</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Изменить оплату</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Найти оплату</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Реестр для банка</button></p>
+					  	</div>
+					</div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="payments">
-					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
-					<li><a class="dropdown-item" href="#">Добавить</a></li>
-					<li><a class="dropdown-item" href="#">Изменить</a></li>
-					<li><a class="dropdown-item" href="#">Реестр для банка</a></li>
-					
-				</ul>
-			</div>
-			
-			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="execution" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Выполнение
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingFive">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						Выполнение
+					  </button>
+					</h2>
+					<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+					  	<div class="accordion-body">
+						  <p><button type="button" class="btn btn-outline-primary">Добавить выполнение</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Изменить выполнение</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Найти выполнение</button></p>
+						</div>
+					</div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="execution">
-					<li><a class="dropdown-item" href="#">Посмотреть</a></li>
-					<li><a class="dropdown-item" href="#">Добавить</a></li>
-					<li><a class="dropdown-item" href="#">Изменить</a></li>
-					
-				</ul>
-			</div>
-			
-			<div class="block mb-2 dropdown dropend">
-				<div class=" dropdown-toggle" id="reports" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Отчёты
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingSix">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						Отчёты
+					  </button>
+					</h2>
+					<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+					  	<div class="accordion-body">
+						  <p><button type="button" class="btn btn-outline-primary">Отчёт по проектам</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Отчёт по договорам</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Отчёт по оплатам</button></p>
+						  <p><button type="button" class="btn btn-outline-primary">Отчёт по выполнению</button></p>
+						</div>
+					</div>
 				</div>
-				<ul class="dropdown-menu" aria-labelledby="reports">
-					<li><a class="dropdown-item" href="#">По бюджетам</a></li>
-					<li><a class="dropdown-item" href="#">По договорам</a></li>
-					<li><a class="dropdown-item" href="#">По оплатам</a></li>
-					<li><a class="dropdown-item" href="#">По выполнению</a></li>
-					
-				</ul>
 			</div>
-			
-			
 		</div>
+	
+
+
 	</div>
 
 		<!--	Это модальное окно Контрагенты	-->
